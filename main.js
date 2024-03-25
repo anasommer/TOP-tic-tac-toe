@@ -10,6 +10,7 @@ restartBtn.addEventListener('click', () => {
 
 const displayController = (() => {
   const renderMessage = (message) => {
+    document.querySelector('#message').style.display = 'block';
     document.querySelector('#message').innerHTML = message;
   };
   return {
@@ -98,6 +99,8 @@ const Game = (() => {
     }
     Gameboard.render();
     Game.start();
+    gameOver = false;
+    document.querySelector('#message').style.display = 'none';
   };
 
   return {

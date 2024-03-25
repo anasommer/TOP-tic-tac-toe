@@ -69,6 +69,7 @@ input {
 }
 
 #message {
+  display: none;
   background-color: #b6e53e;
   color: #130e0e;
   text-transform: uppercase;
