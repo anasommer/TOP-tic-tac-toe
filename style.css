@@ -5,11 +5,44 @@ body {
 }
 
 body {
+  background-color: #2d2c39fe;
+  color: #fff;
   margin: 0 auto;
-  max-width: 800px;
+  width: 800px;
   text-align: center;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
     'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#start-btn {
+  background-color: #b6e53e;
+  color: #130e0e;
+}
+
+#restart-btn {
+  background-color: #910f6c;
+  color: #fff;
+}
+
+button {
+  display: block;
+  margin: 10px auto;
+  cursor: pointer;
+  border: none;
+  padding: 10px 13px;
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+button:hover {
+  opacity: 0.5;
+}
+
+input {
+  border: none;
+  padding: 10px 14px;
+  border-radius: 8px;
 }
 
 #gameboard {
@@ -19,16 +52,32 @@ body {
   align-items: center;
   height: 300px;
   margin-top: 30px;
+  position: relative;
 }
 
 .square {
   display: flex;
   flex-wrap: wrap;
-  border: 1px solid #000;
+  border: 1px solid #b6e53e;
   justify-content: center;
   align-items: center;
   width: 25%;
   height: 50%;
   text-align: center;
+  font-size: 4rem;
+  color: #fff;
+}
+
+#message {
+  background-color: #b6e53e;
+  color: #130e0e;
+  text-transform: uppercase;
+  height: 100px;
+  padding: 10px 20px;
+  width: 400px;
+  margin: 0 auto;
+  position: absolute;
+  top: 40%;
+  left: 33%;
   font-size: 4rem;
 }
